@@ -15,7 +15,10 @@ namespace ParserAlegro
         public string CatalogNumber { get; set; }
         public string CatalogNumber_2 { get; set; }
         public string CatalogNumber_3 { get; set; }
-        
+        public string Quantity { get; set; }
+        public string Url { get; set; }
+        public string Producer { get; set; }
+
         public ObjectAlegro()
         {
 

@@ -61,9 +61,11 @@ namespace ParserAlegro
             {
                 await InitBrowserAsync();
                 _page = await GetPageAsync();
+                await _page.SetViewportAsync(new ViewPortOptions { Width = 1366, Height = 720 });
+
                 await _page.AuthenticateAsync(new PuppeteerSharp.Credentials() { Username = Login, Password = Password });
 
-                var responce = await _page.GoToAsync(url);
+                var responce = await _page.GoToAsync(url, timeout:60000);
               
                 text = await responce.TextAsync();
             }

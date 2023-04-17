@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="EPPlus" Version="6.0.5" />
+    <PackageReference Include="Google.Apis.Sheets.v4" Version="1.60.0.2979" />
     <PackageReference Include="PuppeteerSharp" Version="7.0.0" />
   </ItemGroup>
 
